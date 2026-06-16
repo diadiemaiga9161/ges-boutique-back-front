@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="/LigneFactureRepository (snapshot).java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/LigneFactureRepository (snapshot).java" />
+              <option name="originalContent" value="package com.ges.boutique.caisse;&#10;&#10;import org.springframework.data.jpa.repository.JpaRepository;&#10;import org.springframework.stereotype.Repository;&#10;&#10;import java.util.List;&#10;&#10;@Repository&#10;public interface LigneFactureRepository extends JpaRepository&lt;LigneFacture, Long&gt; {&#10;&#10;    List&lt;LigneFacture&gt; findByFactureId(Long factureId);&#10;}&#10;" />
+              <option name="updatedContent" value="package com.ges.boutique.caisse;&#10;&#10;import org.springframework.data.jpa.repository.JpaRepository;&#10;import org.springframework.stereotype.Repository;&#10;&#10;import java.util.List;&#10;&#10;@Repository&#10;public interface LigneFactureRepository extends JpaRepository&lt;LigneFacture, Long&gt; {&#10;&#10;    List&lt;LigneFacture&gt; findByFactureId(Long factureId);&#10;    void deleteByFactureId(Long factureId);&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
