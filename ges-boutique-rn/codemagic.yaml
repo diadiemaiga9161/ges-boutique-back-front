@@ -4,6 +4,7 @@ workflows:
     name: Ges Boutique RN - Android APK
     max_build_duration: 60
     instance_type: mac_mini_m2
+    working_directory: ges-boutique-rn
 
     environment:
       node: 22.16.0
@@ -23,7 +24,7 @@ workflows:
           ./gradlew assembleDebug
 
     artifacts:
-      - android/app/build/outputs/apk/debug/app-debug.apk
+      - ges-boutique-rn/android/app/build/outputs/apk/debug/app-debug.apk
 
     publishing:
       email:
